@@ -1,1 +1,14 @@
+#Visual Studio Code folder
 .vscode
+
+# macOS system files
+.DS_Store
+
+# macOS Finder metadata
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
