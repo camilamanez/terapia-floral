@@ -16,6 +16,7 @@ body {
   background-repeat: repeat;
   background-size: 12rem;
   color: #4a2c18;
+  font-size: 1.1rem;
 }
 
 /* Header */
@@ -27,20 +28,16 @@ header {
 /* Nav */
 .nav-link {
   color: #ede0d4;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+  font-size: 1rem;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-link:hover {
   color: #ede0d4;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-}
-
-.nav-item {
-  padding-right: 0.5rem;
 }
 
 .navbar-toggler {
@@ -53,37 +50,6 @@ color:#ede0d4;
 filter: invert(1);
 }
 
-.secondary-nav {
-  background-color: #856e4d;
-  color: #ede0d4;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0;
-  padding-left: 0;
-  margin: auto;
-}
-
-.secondary-nav-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.secondary-nav li {
-  list-style: none;
-  padding: 0.5rem;
-}
-
-.secondary-nav a {
-  color: #ede0d4;
-  text-decoration-line: underline;
-  text-decoration-color: #ede0d4;
-  text-underline-offset: 0.3rem;
-  font-size: 0.9rem;
-}
 
 /* Typography */
 h1,
@@ -124,7 +90,6 @@ h4 {
 }
 
 /* Main Content */
-
 /* Components */
 .logo {
   width: 5rem;
@@ -135,23 +100,9 @@ h4 {
   margin-bottom: 10px;
 }
 
-.form-wrapper {
-  background-color: #656d4a;
-  border-radius: 10px;
-  width: 100%;
-  box-shadow: 0 0 10px 0 gray;
-  color: #ede0d4;
-}
-
 .hz-image {
   width: 100%;
   height: 10rem;
-  object-fit: cover;
-}
-
-.vl-image {
-  height: 100%;
-  width: 12rem;
   object-fit: cover;
 }
 
@@ -199,7 +150,6 @@ h4 {
 .box {
   backdrop-filter: blur(2px);
   border: #414833 solid 1px;
-  border-radius: 10px;
   width: 100%;
   margin: 1rem 0;
   padding: 1rem;
@@ -223,6 +173,20 @@ h4 {
   background-color: #414833;
   color: #ede0d4;
   border: solid 1px #ede0d4;
+}
+
+.btn.show {
+  background-color: #ede0d4;
+  color: #414833;
+  border: solid 1px #4a2c18;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: #ede0d4;
+  background-color: #414833;
+  border-color: #4a2c18;
 }
 
 .subheader {
@@ -252,9 +216,39 @@ strong {
   margin: 3em 0 1em 0;
 }
 
-.main-content-highlight {
-  border: #414833 solid 1px;
+/* Flores */
+.dropdown {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.dropdown-menu {
+  background-color: #856e4d;
+  color: #ede0d4;
+  font-weight: 500;
+  width: 100%;
+}
+
+.dropdown-item {
+  color: #ede0d4;
+}
+
+.dropdown-item:active {
+  color: #ede0d4;
+  background-color: #414833;
+}
+
+/* Servicios */
+.img-adaptive {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-spacing {
+  margin: 1rem 0;
 }
 
 /* FAQS */
@@ -306,19 +300,5 @@ footer {
   .nav-link {
     font-size: 1rem;
     font-weight: 500;
-  }
-
-  .vl-image {
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-    padding: 0;
-  }
-
-  .main-content-highlight {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 5px;
   }
   }
