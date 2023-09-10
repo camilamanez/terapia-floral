@@ -45,6 +45,7 @@
             <h1>Preguntas Frecuentes</h1>
             <h2 class="mb-4">En general</h2>
         </div>
+        <!-- First Accordion -->
         <article>
             <div class="accordion" id="faqAccordion">
                 <div class="accordion-item">
@@ -280,18 +281,18 @@
                 </div>
             </div>
         </article>
-
+        <!-- Second Accordion -->
         <article>
             <h2 class="mb-4 mt-4">Mascotas</h2>
-            <div class="accordion" id="faqAccordion">
+            <div class="accordion" id="faqAccordion2">
                 <div class="accordion-item">
                     <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
                             ¿Las Flores de Bach son seguras para mascotas?
                         </button>
                     </h3>
-                    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div id="collapseEleven" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion2">
                         <div class="accordion-body">
                             <p class="mb-0">Sí, las Flores de Bach son seguras y efectivas para mascotas. De hecho
                                 suelen surtir efecto más
@@ -310,7 +311,7 @@
                             ¿Cómo administro las Flores de Bach a mi mascota?
                         </button>
                     </h3>
-                    <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
                         <div class="accordion-body">
                             <p class="mb-0">Puedes administrar las gotas de Flores de Bach directamente en la boca de tu
                                 mascota, en su comida o
@@ -328,7 +329,7 @@
                             ¿Cuántas gotas debo darle a mi mascota?
                         </button>
                     </h3>
-                    <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
                         <div class="accordion-body">
                             <p class="mb-0">La dosis estándar recomendada para mascotas es de 4 gotas 4 veces al día. Si
                                 el caso incluye un
@@ -342,12 +343,11 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse
-                            Fourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
                             ¿Cómo puedo darle las gotas a mi mascota si no estoy en casa en todo el día?
                         </button>
                     </h3>
-                    <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
                         <div class="accordion-body">
                             <p class="mb-0">En ese caso, podrías colocarle 15 gotas al pote de agua de tu mascota y
                                 renovarlo de manera diaria.
@@ -362,17 +362,19 @@
                 </div>
             </div>
         </article>
-        <div>
-            <p class="bigger-text mt-4 mb-4">Espero que estas preguntas frecuentes te sean de utilidad. Si tienes alguna
-                otra duda
-                o consulta, <a class="highlight" href="../pages/contacto.html">no dudes en contactarme.</a> Estoy aquí
-                para ayudarte en este camino hacia el bienestar emocional para ti y tus
-                queridas mascotas.</p>
+        <!-- CTA -->
+        <div class="box mt-4 mb-4 bigger-text centered">
+            <p>Espero que estas preguntas frecuentes te sean de utilidad.</p>
+            <p>Si tienes alguna otra duda o consulta, <a class="highlight" href="../pages/contacto.html">no dudes en
+                    contactarme.</a></p>
+            <p class="mb-0">Estoy aquí para ayudarte en este camino hacia el bienestar emocional para ti y tus queridas
+                mascotas.</p>
         </div>
     </main>
     <div>
         <img class="hz-image" src="../images/faqs-bottom-banner.png" alt="Flores violetas">
     </div>
+    <!-- Footer -->
     <footer>
         <div class="container-fluid row align-items-center">
             <p class="centered">¡Gracias por visitarnos!</p>
