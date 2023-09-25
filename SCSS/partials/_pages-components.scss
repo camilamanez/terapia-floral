@@ -1,0 +1,152 @@
+/* Cards */
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.my-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $ebony;
+  border-radius: 10px;
+  width: 17rem;
+  box-shadow: 0 0 10px 0 gray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  p {
+    color: $almond;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-heading {
+    font-size: 1.5rem;
+    color: $almond;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+}
+
+/* Boxes */
+
+.box {
+  backdrop-filter: blur(2px);
+  border: $ebony solid 1px;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-primary {
+  background-color: $almond;
+  color: $ebony;
+  border: solid 1px $cafe-noir;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: $ebony;
+    color: $almond;
+    border: solid 1px $almond;
+  }
+}
+
+.btn.show {
+  background-color: $almond;
+  color: $ebony;
+  border: solid 1px $cafe-noir;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: $almond;
+  background-color: $ebony;
+  border-color: $cafe-noir;
+}
+
+.hero-wrapper {
+  margin: 3em 0 1em 0;
+}
+
+/* Flowers */
+.dropdown {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .dropdown-menu {
+    background-color: $coyote;
+    color: $almond;
+    font-weight: 500;
+    width: 100%;
+
+    .dropdown-item {
+      color: $almond;
+      font-size: 1.1rem;
+      padding-bottom: 8px;
+
+      &:active {
+        color: $almond;
+        background-color: $ebony;
+      }
+    }
+  }
+}
+
+/* Services */
+.img-adaptive {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-spacing {
+  margin: 1rem 0;
+}
+
+/* FAQS */
+.accordion-button:not(.collapsed) {
+  color: $almond;
+  background-color: $ebony;
+}
+
+.accordion-button:focus {
+  border-color: $reseda-green;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}
+
+.accordion-button {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

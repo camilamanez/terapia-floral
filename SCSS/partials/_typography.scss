@@ -1,0 +1,54 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Upright:wght@300;400;500;700&display=swap");
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-upright;
+  color: $ebony;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.subheader {
+  font-size: 1.5rem;
+  color: $ebony;
+}
+
+.bigger-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+em,
+strong {
+  font-size: 1.1rem;
+}
+
+.highlight {
+  text-decoration: underline $reseda-green;
+  color: $reseda-green;
+}

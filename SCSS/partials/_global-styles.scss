@@ -1,0 +1,95 @@
+/* Body */
+
+body {
+  font-family: $font-family;
+  background-color: $almond;
+  background-image: url(../images/texture-bg.png);
+  background-repeat: repeat;
+  background-size: 12rem;
+  color: $cafe-noir;
+  font-size: 1.1rem;
+}
+
+/* Header */
+
+header {
+  background-color: $coyote;
+  color: $almond;
+}
+
+/* Footer */
+footer {
+  background-color: $coyote;
+  color: $almond;
+  padding: 1rem 0;
+
+  .footer-list {
+    list-style: none;
+
+    .footer-link {
+      color: $almond;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Nav */
+
+.nav-link {
+  color: $almond;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: $almond;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+}
+
+.navbar-toggler {
+  color: $almond;
+  border-color: $almond;
+}
+
+.navbar-toggler-icon {
+  color: $almond;
+  filter: invert(1);
+}
+
+/* Components */
+
+.logo {
+  width: 5rem;
+}
+
+.hero-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hz-image {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* Animations */
+/* Slide Navbar items */
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+nav li {
+  animation: slideRight 0.8s ease-in;
+}

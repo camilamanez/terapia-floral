@@ -8,7 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- My Stylesheet -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/new-styles.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Sobre las Flores</title>
 </head>
 
@@ -42,33 +45,42 @@
     </header>
     <main>
         <!-- Main Info -->
-        <section class="container">
-            <div class="hero-wrapper">
+        <section class="container-fluid">
+            <div class="hero-wrapper" data-aos="fade-right">
                 <h1>Sobre las Flores</h1>
                 <p class="bigger-text">Las Flores de Bach, creadas por el Dr. Edward Bach, son esencias florales
                     diseñadas para equilibrar y armonizar emociones, mejorando así tu bienestar físico y mental.</p>
             </div>
-            <p class="subheader centered mt-3 mb-3"><b>"La enfermedad es el resultado de una desarmonía entre nuestro
-                    cuerpo y alma"</b>
-            </p>
-            <p>El Dr. Edward Bach revolucionó la medicina al entender que la personalidad del paciente era clave en la
-                curación. Notó que cada individuo reaccionaba de manera diferente a una misma enfermedad y que a menudo
-                el proceso de recuperación era más doloroso que la propia enfermedad. Decidió que la verdadera curación
-                debía ser suave y benigna.</p>
-            <p>Su intuición lo llevó a experimentar con flores en 1928, creando así los primeros goteros de esencias
-                florales, simples pero poderosos. Las Flores de Bach se centran en restaurar el equilibrio emocional,
-                abordando las raíces emocionales de los desequilibrios para promover el bienestar integral. Cada flor se
-                asocia con una emoción específica, como el miedo o la tristeza.</p>
-            <p>Descubre cómo estas esencias naturales pueden ayudarte a recuperar el equilibrio emocional y el bienestar
-                interior. ¡Explora las 7 artes emocionales del Dr. Bach y descubre su popular compuesto, el Rescue
-                Remedy!</p>
+            <div data-aos="fade-left">
+                <p class="subheader centered mt-3 mb-3"><b>"La enfermedad es el resultado de una desarmonía entre
+                        nuestro
+                        cuerpo y alma"</b>
+                </p>
+                <p>El Dr. Edward Bach revolucionó la medicina al entender que la personalidad del paciente era clave en
+                    la
+                    curación. Notó que cada individuo reaccionaba de manera diferente a una misma enfermedad y que a
+                    menudo
+                    el proceso de recuperación era más doloroso que la propia enfermedad. Decidió que la verdadera
+                    curación
+                    debía ser suave y benigna.</p>
+                <p>Su intuición lo llevó a experimentar con flores en 1928, creando así los primeros goteros de esencias
+                    florales, simples pero poderosos. Las Flores de Bach se centran en restaurar el equilibrio
+                    emocional,
+                    abordando las raíces emocionales de los desequilibrios para promover el bienestar integral. Cada
+                    flor se
+                    asocia con una emoción específica, como el miedo o la tristeza.</p>
+                <p>Descubre cómo estas esencias naturales pueden ayudarte a recuperar el equilibrio emocional y el
+                    bienestar
+                    interior. ¡Explora las 7 artes emocionales del Dr. Bach y descubre su popular compuesto, el Rescue
+                    Remedy!</p>
+            </div>
         </section>
-        <div class="mb-4">
+        <div class="mb-4" data-aos="fade-up">
             <img class="hz-image" src="../images/windy-flowers.jpg" alt="Flores silvestres al viento">
         </div>
         <!-- Flower Groups Nav-->
-        <section class="container">
-            <div class="dropdown">
+        <section class="container-fluid">
+            <div class="dropdown" data-aos="zoom-in-up">
                 <button class="btn btn-primary dropdown-toggle w-100" type="button" id="secondary-nav-dropdown"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Grupos de Flores
@@ -85,7 +97,7 @@
                 </ul>
             </div>
             <!-- Flower Groups Info -->
-            <article id="art1" class="box">
+            <article id="art1" class="box" data-aos="fade-right">
                 <h2>Miedo</h2>
                 <p>Este grupo incluye flores para abordar miedos de
                     distintas clases:</p>
@@ -99,7 +111,7 @@
                         demás.</li>
                 </ul>
             </article>
-            <article id="art2" class="box">
+            <article id="art2" class="box" data-aos="fade-left">
                 <h2>Incertidumbre</h2>
                 <p>Este grupo abarca flores para situaciones de
                     incertidumbre, indecisión o falta de confianza en la
@@ -121,7 +133,7 @@
                         dirección en la vida. Duda vocacional.</li>
                 </ul>
             </article>
-            <article id="art3" class="box">
+            <article id="art3" class="box" data-aos="fade-right">
                 <h2>Falta de interés en el presente</h2>
                 <p>Estas flores se usan para aquellos que se sienten
                     abrumados por el pasado o preocupados por el
@@ -146,7 +158,7 @@
                 </ul>
 
             </article>
-            <article id="art4" class="box">
+            <article id="art4" class="box" data-aos="fade-left">
                 <h2>Soledad</h2>
                 <p>Este grupo abarca flores para situaciones de soledad, el
                     aislamiento y la dificultad para conectarse
@@ -163,7 +175,7 @@
                 </ul>
 
             </article>
-            <article id="art5" class="box">
+            <article id="art5" class="box" data-aos="fade-right">
                 <h2>Sensibilidad excesiva a las influencias y opiniones</h2>
                 <p>Estas flores se usan para personas altamente sensibles a
                     las opiniones de los demás, que fácilmente
@@ -183,7 +195,7 @@
                 </ul>
 
             </article>
-            <article id="art6" class="box">
+            <article id="art6" class="box" data-aos="fade-left">
                 <h2>Desaliento o desesperación</h2>
                 <p>Este grupo abarca flores para momentos de desesperación,
                     desaliento o desesperanza.</p>
@@ -202,7 +214,7 @@
                 </ul>
 
             </article>
-            <article id="art7" class="box">
+            <article id="art7" class="box" data-aos="fade-right">
                 <h2>Preocupación excesiva por el bienestar de los demás</h2>
                 <p>Este grupo se centra en flores para aquellos que se
                     preocupan excesivamente por el bienestar de los
@@ -218,7 +230,7 @@
                 </ul>
             </article>
             <!-- Rescue Remedy Info -->
-            <article id="rescue" class="box">
+            <article id="rescue" class="box" data-aos="fade-left">
                 <h2 class="centered">Rescue Remedy</h2>
                 <img class="hz-image mt-3 mb-3" src="../images/blank-dropper.jpg" alt="Gotero sobre madera">
                 <div>
@@ -251,7 +263,7 @@
             </article>
         </section>
         <!-- CTA -->
-        <div class="container mt-4 mb-4">
+        <div class="container mt-4 mb-4" data-aos="fade-right">
             <a class="btn btn-primary d-grid gap-2" role="button" href="./contacto.html">¡Quiero mi gotero!</a>
         </div>
     </main>
@@ -279,6 +291,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

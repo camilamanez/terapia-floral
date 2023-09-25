@@ -1,18 +1,9 @@
-/* Color Palette
---cafe-noir: #4a2c18;
---coyote: #856e4d;
---almond: #ede0d4;
---reseda-green: #656d4a;
---ebony: #414833; */
-
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Upright:wght@300;400;500;700&display=swap");
-
 /* Body */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Upright:wght@300;400;500;700&display=swap");
 body {
   font-family: "Cormorant Garamond", serif;
   background-color: #ede0d4;
-  background-image: url(./images/texture-bg.png);
+  background-image: url(../images/texture-bg.png);
   background-repeat: repeat;
   background-size: 12rem;
   color: #4a2c18;
@@ -25,6 +16,21 @@ header {
   color: #ede0d4;
 }
 
+/* Footer */
+footer {
+  background-color: #856e4d;
+  color: #ede0d4;
+  padding: 1rem 0;
+}
+footer .footer-list {
+  list-style: none;
+}
+footer .footer-list .footer-link {
+  color: #ede0d4;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 /* Nav */
 .nav-link {
   color: #ede0d4;
@@ -32,7 +38,6 @@ header {
   text-decoration: none;
   font-weight: 500;
 }
-
 .nav-link:hover {
   color: #ede0d4;
   font-size: 1.4rem;
@@ -50,6 +55,39 @@ header {
   filter: invert(1);
 }
 
+/* Components */
+.logo {
+  width: 5rem;
+}
+
+.hero-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hz-image {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* Animations */
+/* Slide Navbar items */
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+nav li {
+  animation: slideRight 0.8s ease-in;
+}
+
+/* Fonts */
 /* Typography */
 h1,
 h2,
@@ -81,13 +119,6 @@ h4 {
   text-align: center;
 }
 
-.logo-title {
-  font-family: "Cormorant Upright", serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-left: 1rem;
-}
-
 .subheader {
   font-size: 1.5rem;
   color: #414833;
@@ -103,31 +134,12 @@ strong {
   font-size: 1.1rem;
 }
 
-.box p {
-  font-size: 1.1rem;
+.highlight {
+  text-decoration: underline #656d4a;
+  color: #656d4a;
 }
 
-.box h2 {
-  font-size: 1.6rem;
-}
-
-/* Main Content */
-/* Components */
-.logo {
-  width: 5rem;
-}
-
-.hero-image {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.hz-image {
-  width: 100%;
-  height: 10rem;
-  object-fit: cover;
-}
-
+/* Cards */
 .card-section {
   display: flex;
   flex-wrap: wrap;
@@ -149,18 +161,11 @@ strong {
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
-
 .my-card p {
   color: #ede0d4;
   font-size: 1.2rem;
   text-align: center;
 }
-
-.highlight {
-  text-decoration: underline #656d4a;
-  color: #656d4a;
-}
-
 .my-card img {
   border-radius: 5px;
   width: 100%;
@@ -168,7 +173,14 @@ strong {
   object-fit: cover;
   border-radius: 10px;
 }
+.my-card .card-heading {
+  font-size: 1.5rem;
+  color: #ede0d4;
+  text-align: center;
+  padding-top: 0.5rem;
+}
 
+/* Boxes */
 .box {
   backdrop-filter: blur(2px);
   border: #414833 solid 1px;
@@ -176,12 +188,11 @@ strong {
   margin: 1rem 0;
   padding: 1rem;
 }
-
-.card-heading {
-  font-size: 1.5rem;
-  color: #ede0d4;
-  text-align: center;
-  padding-top: 0.5rem;
+.box p {
+  font-size: 1.1rem;
+}
+.box h2 {
+  font-size: 1.6rem;
 }
 
 .btn-primary {
@@ -190,7 +201,6 @@ strong {
   border: solid 1px #4a2c18;
   font-size: 1.2rem;
 }
-
 .btn-primary:hover {
   background-color: #414833;
   color: #ede0d4;
@@ -216,32 +226,29 @@ strong {
   margin: 3em 0 1em 0;
 }
 
-/* Flores */
+/* Flowers */
 .dropdown {
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
-.dropdown-menu {
+.dropdown .dropdown-menu {
   background-color: #856e4d;
   color: #ede0d4;
   font-weight: 500;
   width: 100%;
 }
-
-.dropdown-item {
+.dropdown .dropdown-menu .dropdown-item {
   color: #ede0d4;
   font-size: 1.1rem;
   padding-bottom: 8px;
 }
-
-.dropdown-item:active {
+.dropdown .dropdown-menu .dropdown-item:active {
   color: #ede0d4;
   background-color: #414833;
 }
 
-/* Servicios */
+/* Services */
 .img-adaptive {
   border-radius: 10px;
   width: 100%;
@@ -274,28 +281,42 @@ strong {
   padding-bottom: 2rem;
 }
 
-/* Footer */
-footer {
-  background-color: #856e4d;
-  color: #ede0d4;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.footer-list {
-  list-style: none;
-}
-
-.footer-link {
-  color: #ede0d4;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
 /* Media queries */
-
 @media screen and (max-width: 1200px) {
   .nav-item {
     padding-right: 0;
   }
+  /* Typography */
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  .subheader {
+    font-size: 1.3rem;
+    color: #414833;
+  }
+  .bigger-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  em,
+  strong {
+    font-size: 1.1rem;
+  }
+  p,
+  li {
+    font-size: 1rem;
+  }
 }
+
+/*# sourceMappingURL=new-styles.css.map */
