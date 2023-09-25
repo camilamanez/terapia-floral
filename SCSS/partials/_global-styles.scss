@@ -1,17 +1,20 @@
-/* Body */
-
-body {
-  font-family: $font-family;
-  background-color: $almond;
-  background-image: url(../images/texture-bg.png);
-  background-repeat: repeat;
-  background-size: 12rem;
-  color: $cafe-noir;
-  font-size: 1.1rem;
+html {
+  overflow-x: hidden;
+  /* Fix for AOS library bug */
+  body {
+    font-family: $font-family;
+    background-color: $almond;
+    background-image: url(../images/texture-bg.png);
+    background-repeat: repeat;
+    background-size: 12rem;
+    color: $cafe-noir;
+    font-size: 1.1rem;
+    /* Fix for AOS library bug */
+    overflow-x: hidden;
+  }
 }
 
 /* Header */
-
 header {
   background-color: $coyote;
   color: $almond;

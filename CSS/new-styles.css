@@ -1,6 +1,9 @@
-/* Body */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Upright:wght@300;400;500;700&display=swap");
-body {
+html {
+  overflow-x: hidden;
+  /* Fix for AOS library bug */
+}
+html body {
   font-family: "Cormorant Garamond", serif;
   background-color: #ede0d4;
   background-image: url(../images/texture-bg.png);
@@ -8,6 +11,8 @@ body {
   background-size: 12rem;
   color: #4a2c18;
   font-size: 1.1rem;
+  /* Fix for AOS library bug */
+  overflow-x: hidden;
 }
 
 /* Header */
