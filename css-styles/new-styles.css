@@ -6,7 +6,7 @@ html {
 html body {
   font-family: "Cormorant Garamond", serif;
   background-color: #ede0d4;
-  background-image: url(../images/texture-bg.png);
+  background-image: url(../images/texture-bg.jpeg);
   background-repeat: repeat;
   background-size: 12rem;
   color: #4a2c18;
@@ -291,7 +291,6 @@ strong {
   .nav-item {
     padding-right: 0;
   }
-  /* Typography */
   h1 {
     font-size: 2rem;
     margin: 1rem 0;
@@ -321,6 +320,11 @@ strong {
   p,
   li {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile-padding {
+    padding-top: 24px;
   }
 }
 
